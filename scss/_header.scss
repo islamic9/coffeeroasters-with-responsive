@@ -1,0 +1,49 @@
+
+.header__navbar{
+  @include center-elements(flex, center, space-between, 0);
+  padding: 50px 0 48px 0;
+}
+
+.header__list{
+  @include center-elements(flex, center, center, 33px);
+}
+
+.header__item{
+  @include fonts('Barlow-700',normal, 700, 12px, 15px, 0.923077px, #83888F);
+  &:hover{
+    color: #333D4B;
+    cursor: pointer;
+  }
+}
+
+.menu__burger{
+  display: none;
+}
+
+@media only screen and (max-width:600px){
+
+  .container{
+    max-width: 375px;
+    padding: 0 24px;
+    margin: auto;
+  }
+
+  .header__inner{
+    @include center-elements(flex, center, space-between, 0)
+  }
+
+  .header__list{
+    display: none;
+  }
+
+  .header__navbar{
+    @include center-elements(flex, center, space-between, 0);
+    padding: 32px 0 40px 0;
+  }
+  
+
+  .menu__burger{
+    display: block;
+  }
+
+}

@@ -1,0 +1,16 @@
+@mixin center-elements($flex, $align, $j-content, $gap){
+  display: $flex;
+  align-items: $align;
+  justify-content: $j-content;
+  gap: $gap;
+}
+
+@mixin fonts($ff,$fs,$fw,$f-size,$fh,$ls,$color){
+  font-family: $ff;
+  font-style: $fs;
+  font-weight: $fw;
+  font-size: $f-size;
+  line-height: $fh;
+  letter-spacing: $ls;
+  color: $color;
+}

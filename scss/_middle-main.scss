@@ -1,0 +1,311 @@
+
+.middle__inner{
+  padding-bottom: 200px;
+}
+
+.main__background{
+  margin: auto;
+  display: block;
+}
+
+.middle__wrapper{
+  @include center-elements(flex, center, center, 30px);
+  padding-bottom: 200px;
+  margin-top: -65px;
+}
+
+.middle__card{
+  @include center-elements(flex, center, center, 0);
+  flex-direction: column;
+}
+
+.middle__img{
+  padding-bottom: 71px;
+  text-align: center;
+}
+
+.middle__card-description{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card__title{
+  @include fonts('Fraunces 9pt',normal, 900, 24px, 32px, 0,  #333D4B);
+  padding-bottom: 24px;
+}
+
+.card__text{
+  @include fonts('Barlow',normal, 900, 16px, 26px, 0,  #333D4B);
+  text-align: center;
+  max-width: 255px;
+}
+
+// Why choose us
+
+.middle__choose-box{
+  @include center-elements(flex, center, center, 0);
+  flex-direction: column;
+  background: #293039;
+  border-radius: 10px;
+}
+
+.choose__title{
+  @include fonts('Fraunces 9pt',normal, 900, 40px, 48px, 0,  #ffffff);
+  padding: 100px 0 32px 0;
+  text-align: center;
+}
+
+.choose__text{
+  @include fonts('Barlow',normal, 400, 16px, 26px, 0, rgba(222, 222, 222, 0.8));
+  padding-bottom: 317px;
+  max-width: 540px;
+  text-align: center;
+}
+
+// choose cards 
+
+.choose-us__cards{
+  @include center-elements(flex, center, center, 30px);
+  margin-top: -230px;
+}
+
+.choose__card{
+  background: #0E8784;
+  border-radius: 8px;
+  width: 350px;
+  height: 382px;
+  @include center-elements(flex, center, center, 0);
+  flex-direction: column;
+}
+
+.choose__card-img{
+  padding: 72px 0 56px 0;
+}
+
+.choose__card-description{
+  flex-direction: column;
+  @include center-elements(flex, center, center, 0);
+}
+
+.choose__card-title{
+  @include fonts('Fraunces 9pt',normal, 900, 24px, 32px, 0,  #ffffff);
+  padding-bottom: 24px;
+}
+
+.choose__card-text{
+  @include fonts('Barlow',normal, 400, 16px, 26px, 0, rgba(222, 222, 222, 0.8));
+  padding-bottom: 48px;
+  text-align: center;
+  max-width: 255px;
+  padding-inline: 48px;
+}
+
+
+@media only screen and (max-width:770px){
+
+  .middle__inner{
+    padding-bottom: 144px;
+  }
+  
+
+  .middle__wrapper{
+    @include center-elements(flex, center, center, 30px);
+    padding-bottom: 144px;
+    margin-top: -65px;
+    flex-direction: column;
+  }
+
+  .middle__img{
+    padding-bottom: 0;
+    text-align: center;
+  }
+
+  .middle__card-description{
+    @include center-elements(flex, flex-start, center, 0);
+    flex-direction: column;
+  }
+
+  .middle__card{
+    @include center-elements(flex, center, center, 35px);
+    flex-direction: row;
+  }
+
+  .card__title{
+    @include fonts('Fraunces 9pt',normal, 900, 24px, 32px, 0,  #333D4B);
+    padding-bottom: 24px;
+    text-align: start;
+    display: inline;
+  }
+  
+  .card__text{
+    @include fonts('Barlow',normal, 400, 15px, 25px, 0,  #333D4B);
+    text-align: start;
+    max-width: 282px;
+  }
+
+  .choose__title{
+    @include fonts('Fraunces 9pt',normal, 900, 32px, 48px, 0,  #ffffff);
+    padding: 100px 0 32px 0;
+    text-align: center;
+  }
+  
+  .choose__text{
+    @include fonts('Barlow',normal, 400, 15px, 25px, 0, rgba(222, 222, 222, 0.8));
+    padding-bottom: 368px;
+    max-width: 540px;
+    text-align: center;
+  }
+
+  .choose-us__cards{
+    @include center-elements(flex, center, center, 30px);
+    flex-direction: column;
+    margin-top: -300px;
+  }
+  
+  .choose__card{
+    width: 573px;
+    height: 180px;
+    background: #0E8784;
+    border-radius: 8px;
+    @include center-elements(flex, center, center, 0);
+    flex-direction: row;
+  }
+  
+  .choose__card-img{
+    padding: 62px 55px 62px 70px;
+  }
+
+  .choose__card-description{
+    flex-direction: column;
+    @include center-elements(flex, flex-start, center, 0);
+  }
+
+  .choose__card-title{
+    @include fonts('Fraunces 9pt',normal, 900, 24px, 32px, 0,  #ffffff);
+    padding: 41px 0 16px 0;
+  }
+  
+  .choose__card-text{
+    @include fonts('Barlow',normal, 400, 15px, 25px, 0, rgba(222, 222, 222, 0.8));
+    padding-bottom: 48px;
+    text-align: center;
+    max-width: 344px;
+    padding-inline: 0;
+    text-align: start;
+  }
+
+  .active{
+    width: 60px;
+  }
+  
+}
+
+@media only screen and (max-width:375px){
+  .middle__inner{
+    padding-bottom: 120px;
+  }
+
+  .middle__wrapper{
+    @include center-elements(flex, center, center, 30px);
+    padding-bottom: 120px;
+    margin-top: 23px;
+    flex-direction: column;
+  }
+
+  .middle__img{
+    padding-bottom: 0;
+    text-align: center;
+  }
+
+  .middle__card-description{
+    @include center-elements(flex, center, center, 0);
+    flex-direction: column;
+  }
+
+  .middle__card{
+    @include center-elements(flex, center, center, 35px);
+    flex-direction: column;
+  }
+
+  .card__title{
+    @include fonts('Fraunces 9pt',normal, 900, 24px, 32px, 0,  #333D4B);
+    padding-bottom: 24px;
+    display: inline;
+  }
+  
+  .card__text{
+    @include fonts('Barlow',normal, 400, 15px, 25px, 0,  #333D4B);
+    text-align: center;
+    max-width: 282px;
+  }
+
+  .choose__title{
+    @include fonts('Fraunces 9pt',normal, 900, 32px, 48px, 0,  #ffffff);
+    padding: 100px 0 32px 0;
+    text-align: center;
+  }
+  
+  .choose__text{
+    @include fonts('Barlow',normal, 400, 15px, 25px, 0, rgba(222, 222, 222, 0.8));
+    padding-bottom: 661px;
+    max-width: 279px;
+    text-align: center;
+  }
+
+  .choose-us__cards{
+    @include center-elements(flex, center, center, 30px);
+    flex-direction: column;
+    margin-top: -38rem;
+  }
+
+  .choose__card-img{
+    padding: 0
+  }
+
+  .choose__card-description{
+    flex-direction: column;
+    @include center-elements(flex, center, center, 0);
+  }
+  
+  .choose__card-title{
+    @include fonts('Fraunces 9pt',normal, 900, 24px, 32px, 0,  #ffffff);
+    padding: 41px 0 16px 0;
+    text-align: center;
+  }
+  
+  .choose__card-text{
+    @include fonts('Barlow',normal, 400, 15px, 25px, 0, rgba(222, 222, 222, 0.8));
+    padding-bottom: 48px;
+    text-align: center;
+    max-width: 212px;
+    padding-inline: 0;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width:650px){
+  .choose__card{
+    width: 82%;
+    height: 382px;
+    background: #0E8784;
+    border-radius: 8px;
+    @include center-elements(flex, center, center, 0);
+    flex-direction: column;
+  }
+
+  .choose__card-description{
+    flex-direction: column;
+    @include center-elements(flex, center, center, 0);
+  }
+
+  .choose__card-text{
+    @include fonts('Barlow',normal, 400, 15px, 25px, 0, rgba(222, 222, 222, 0.8));
+    padding-bottom: 48px;
+    text-align: center;
+    max-width: 344px;
+    padding-inline: 0;
+    text-align: center;
+  }
+
+}

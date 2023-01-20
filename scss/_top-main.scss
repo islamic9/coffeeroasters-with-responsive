@@ -1,0 +1,102 @@
+.top__inner{
+  background-image: url("../images/header-images/hero-img.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  border-radius: 10px;
+  margin-bottom: 136px;
+}
+
+
+.main__title{
+  @include fonts('Fraunces 9pt',normal, 900, 72px, 72px, 0, #ffffff);
+  padding: 117px 0 32px 87px;
+  max-width: 493px;
+} 
+
+
+
+.main__text{
+  @include fonts('Barlow',normal, 900, 16px, 26px, 0,  rgb(254, 252, 247, 0.8));
+  max-width: 445px;
+  padding: 0 0 56px 87px;
+}
+
+.top__btn{
+  @include fonts('Fraunces 9pt',normal, 700, 18px, 25px, 0,  rgba(255, 255, 255,));
+  padding: 15px 31px 16px 31px;
+  background: #0E8784;
+  border-radius: 6px;
+  border: none;
+  margin: 0 0 116px 87px;
+  &:hover{
+    background:  #66D2CF;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width:770px){
+
+  .container{
+    max-width: 770px;
+    padding: 0 40px;
+    margin: auto;
+  }
+  .main__title{
+    @include fonts('Fraunces 9pt',normal, 900, 48px, 48px, 0, #ffffff);
+    padding: 104px 0 32px 58px;
+    max-width: 450px;
+  } 
+
+  .main__text{
+    @include fonts('Barlow',normal, 400, 15px, 25px, 0,  rgb(254, 252, 247, 0.8));
+    max-width: 445px;
+    padding: 0 0 40px 58px;
+  }
+
+  .top__btn{
+    @include fonts('Fraunces 9pt',normal, 900, 18px, 25px, 0,  rgba(255, 255, 255,));
+    padding: 15px 31px 16px 31px;
+    background: #0E8784;
+    border-radius: 6px;
+    border: none;
+    margin: 0 0 103px 58px;
+    &:hover{
+      background:  #66D2CF;
+      cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (max-width:375px){
+  .container{
+    max-width: 375px;
+    padding: 0 24px;
+    margin: auto;
+  }
+  .main__title{
+    @include fonts('Fraunces 9pt',normal, 900, 40px, 40px, 0, #ffffff);
+    padding: 100px 24px 24px 24px;
+    max-width: 450px;
+    text-align: center;
+  } 
+
+  .main__text{
+    @include fonts('Barlow',normal, 400, 15px, 25px, 0,  rgb(254, 252, 247, 0.8));
+    max-width: 279px;
+    padding: 0 0 39px 24px;
+  }
+
+  .top__btn{
+    @include fonts('Fraunces 9pt',normal, 900, 18px, 25px, 0,  rgba(255, 255, 255,));
+    padding: 15px 31px 16px 31px;
+    background: #0E8784;
+    border-radius: 6px;
+    border: none;
+    margin: 0 0 103px 50px;
+    &:hover{
+      background:  #66D2CF;
+      cursor: pointer;
+    }
+  }
+}

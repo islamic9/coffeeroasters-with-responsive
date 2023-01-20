@@ -1,0 +1,242 @@
+.section__bottom{
+  padding-bottom: 200px;
+}
+
+.bottom__wrapper{
+  @include center-elements(flex, center, start, 95px);
+  margin-top: -33px;
+}
+
+.bottom__title{
+  position: relative;
+  @include fonts('Fraunces 9pt',normal, 900, 24px, 32px, 0,  #83888F);
+  padding-bottom: 80px;
+  display: block;
+}
+
+.bottom__title::after{
+  width: 760px;
+  position: absolute;
+  top: 95px;
+  content: "";
+  display: block;
+  border: 2px solid #FDD6BA;
+  z-index: -1;
+}
+
+.card__circle{
+  display: block;
+  border: 2px solid #0E8784;
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  background: #FEFCF7;
+  margin-bottom: 67px;
+}
+
+.bottom__card-number{
+  @include fonts('Fraunces 9pt',normal, 900, 72px, 72px, 0,  #FDD6BA);
+  padding-bottom: 38px;
+  display: block;
+}
+
+.bottom__card-title{
+  @include fonts('Fraunces 9pt',normal, 900, 32px, 36px, 0, #333D4B);
+  max-width: 255px;
+  padding-bottom: 42px;
+}
+
+.bottom__card-text{
+  @include fonts('Barlow',normal, 400, 16px, 26px, 0, #333D4B);
+  max-width: 285px;
+  padding-bottom: 64px;
+}
+
+.bottom__card-btn{
+  @include fonts('Fraunces 9pt',normal, 900, 18px, 25px, 0,  #FEFCF7); 
+  background: #0E8784;
+  border-radius: 6px;
+  border: none;
+  padding: 15px 31px 16px 31px;
+  &:hover{
+    background:  #66D2CF;
+    cursor: pointer;
+  }
+}
+
+
+@media only screen and (max-width:770px){
+
+  .bottom__wrapper{
+    @include center-elements(flex, center, start, 10px);
+    margin-top: 7px;
+  }
+
+  .main__bottom-container{
+    max-width: 770px;
+    padding: 0 40px;
+    margin: auto;
+  }
+
+  .bottom__title{
+    position: relative;
+    @include fonts('Fraunces 9pt',normal, 900, 24px, 32px, 0,  #83888F);
+    padding-bottom: 40px;
+    display: block;
+  }
+  
+  .bottom__title::after{
+    width: 467px;
+    position: absolute;
+    top: 95px;
+    content: "";
+    display: block;
+    border: 2px solid #FDD6BA;
+    z-index: -1;
+  }
+
+  .bottom__card-number{
+    @include fonts('Fraunces 9pt',normal, 900, 72px, 72px, 0,  #FDD6BA);
+    padding-bottom: 38px;
+    display: block;
+    text-align: center;
+  }
+  
+  .bottom__card-title{
+    @include fonts('Fraunces 9pt',normal, 900, 28px, 32px, 0, #333D4B);
+    max-width: 255px;
+    padding-bottom: 42px;
+    text-align: center;
+  }
+  
+  .bottom__card-text{
+    @include fonts('Barlow',normal, 400, 15px, 25px, 0, #333D4B);
+    max-width: 327px;
+    padding-bottom: 56px;
+    text-align: center;
+  }
+
+  .bottom__card-btn{
+    @include fonts('Fraunces 9pt',normal, 900, 18px, 25px, 0,  #FEFCF7); 
+    text-align: center;
+    background: #0E8784;
+    border-radius: 6px;
+    border: none;
+    padding: 15px 31px 16px 31px;
+    &:hover{
+      background:  #66D2CF;
+      cursor: pointer;
+    }
+  }
+}
+
+
+@media only screen and (max-width:650px){
+  .bottom__title::after, .card__circle{
+   display: none;
+  }
+
+  .main__bottom-container{
+    max-width: 375px;
+    padding: 0 24px;
+    margin: auto;
+  }
+
+  .bottom__wrapper{
+    @include center-elements(flex, center, start, 0);
+    margin-top: 7px;
+    flex-direction: column;
+  }
+
+  .bottom__title{
+    position: relative;
+    @include fonts('Fraunces 9pt',normal, 900, 24px, 32px, 0,  #83888F);
+    padding-bottom: 40px;
+    display: block;
+    text-align: center;
+  }
+  
+  .bottom__card-number{
+    @include fonts('Fraunces 9pt',normal, 900, 72px, 72px, 0,  #FDD6BA);
+    padding-bottom: 38px;
+    display: block;
+  }
+  
+  .bottom__card-title{
+    @include fonts('Fraunces 9pt',normal, 900, 28px, 32px, 0, #333D4B);
+    max-width: 327px;
+    padding-bottom: 42px;
+  }
+  
+  .bottom__card-text{
+    @include fonts('Barlow',normal, 400, 15px, 25px, 0, #333D4B);
+    max-width: 327px;
+    padding-bottom: 44px;
+  }
+
+  .bottom__card-btn{
+    @include fonts('Fraunces 9pt',normal, 900, 18px, 25px, 0,  #FEFCF7); 
+    background: #0E8784;
+    border-radius: 6px;
+    border: none;
+    padding: 15px 31px 16px 31px;
+    &:hover{
+      background:  #66D2CF;
+      cursor: pointer;
+    }
+  }
+}
+
+
+@media only screen and (max-width:375px){
+  
+  .main__bottom-container{
+    max-width: 375px;
+    padding: 0 24px;
+    margin: auto;
+  }
+
+  .bottom__wrapper{
+    @include center-elements(flex, center, start, 0);
+    margin-top: 7px;
+    flex-direction: column;
+  }
+
+  .bottom__title{
+    position: relative;
+    @include fonts('Fraunces 9pt',normal, 900, 24px, 32px, 0,  #83888F);
+    padding-bottom: 40px;
+    display: block;
+    text-align: center;
+  }
+  
+  .bottom__card-number{
+    @include fonts('Fraunces 9pt',normal, 900, 72px, 72px, 0,  #FDD6BA);
+    padding-bottom: 38px;
+    display: block;
+  }
+  
+  .bottom__card-title{
+    @include fonts('Fraunces 9pt',normal, 900, 28px, 32px, 0, #333D4B);
+    max-width: 327px;
+    padding-bottom: 42px;
+  }
+  
+  .bottom__card-text{
+    @include fonts('Barlow',normal, 400, 15px, 25px, 0, #333D4B);
+    max-width: 327px;
+    padding-bottom: 44px;
+  }
+
+  .bottom__card-btn{
+    @include fonts('Fraunces 9pt',normal, 900, 18px, 25px, 0,  #FEFCF7); 
+    background: #0E8784;
+    border-radius: 6px;
+    border: none;
+    padding: 15px 31px 16px 31px;
+    &:hover{
+      background:  #66D2CF;
+      cursor: pointer;
+    }
+  }
+}
